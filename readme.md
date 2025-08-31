@@ -63,29 +63,34 @@ open .         # Открыть Finder в текущей папке
 ## 1. Информация о Homebrew
 
 ```bash
-
+brew --version                # Версия Homebrew
+brew doctor                   # Диагностика системы
+brew update                   # Обновление Homebrew
+brew upgrade                  # Обновление пакетов
+brew upgrade <package_name>   # Обновление конкретного пакета
+brew cleanup                  # Очистка старых версий пакетов
 ```
 
 ## 2. Поиск и установка пакетов
 
 ```bash
-
+brew search <package_name>      # Поиск пакета
+brew install <package_name>     # Установка пакета
+brew uninstall <package_name>   # Удаление пакета
 ```
 
 ## 3. Информация о пакетах
 
 ```bash
-
+brew list                   # Список установленных пакетов
+brew info <package_name>    # Информация о пакете
+brew deps <package_name>    # Зависимости пакета
 ```
 
 ## 4. Работа с Cask (программы с GUI)
 
 ```bash
-
-```
-
-## 5. Информация о Homebrew
-
-```bash
-
+brew install --cask app     # Установка приложения (например, браузера)
+brew list --cask            # Список установленных приложений
+brew uninstall --cask app   # Удаление приложения
 ```
